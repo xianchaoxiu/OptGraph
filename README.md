@@ -4,7 +4,7 @@ The code in this toolbox implements "OptGraph: Boosting LLM-Driven Evolutionary 
 ![alt text](./framework.png)
 
 
-## What Is Included
+### What Is Included
 
 - `WorkFlowGraphRAG.py`: main OptGraph workflow with graph-guided retrieval, validation, repair, and result export.
 - `GraphRAG/or_benchmark_graphrag_adaptive.json`: adaptive graph-structured modeling knowledge used in the main experiments.
@@ -14,11 +14,11 @@ The code in this toolbox implements "OptGraph: Boosting LLM-Driven Evolutionary 
 - `evaluate_result.py`: utility for computing exact and 5% tolerance accuracy from generated results.
 - `scripts/run_main_experiment.ps1`: example script for running the main experiment.
 
-## What Is Not Included
+### What Is Not Included
 
 This public release does not include raw logs, temporary outputs, private error-analysis files, API keys, or non-main experimental scripts.
 
-## Installation
+### Installation
 
 ```bash
 pip install -r requirements.txt
@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 The generated solver code may require an optimization solver package such as PuLP or Gurobi, depending on the generated program and your local environment.
 
-## API Keys
+### API Keys
 
 Set API keys through environment variables. Do not hard-code keys in the repository.
 
@@ -37,7 +37,7 @@ GEMINI_API_KEY=your_gemini_api_key
 
 For OpenAI-compatible gateway services, configure the corresponding base URL variables in `.env.example`.
 
-## Datasets
+### Datasets
 
 The processed CSV files for the six main benchmarks are placed under `Dataset/`:
 
@@ -53,7 +53,7 @@ Dataset/
 
 Each CSV contains a `Query` column for the natural-language problem and a `Label` column for the ground-truth answer.
 
-## Run Main Experiment
+### Run Main Experiment
 
 PowerShell example:
 
@@ -77,7 +77,7 @@ Main configurable variables include:
 
 Outputs are written to `RESULT/`, which is ignored by git.
 
-## Adaptive Graph Update
+### Adaptive Graph Update
 
 The released GraphRAG file is `GraphRAG/or_benchmark_graphrag_adaptive.json`.
 To update the graph from completed execution traces, use:
