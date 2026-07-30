@@ -1,6 +1,6 @@
 # OptGraph
 
-The code in this toolbox implements "OptGraph: Boosting LLM-Driven Evolutionary Optimization Via Adaptive GraphRAG" by <i>X. Xiu, J. Li, H. Chen, W. Liu</i>.
+The code in this toolbox implements "OptGraph: Large Language Models Enhanced Evolutionary Optimization Via Graph Retrieval-Augmented Generation" by <i>X. Xiu, J. Li, H. Chen, W. Liu</i>.
 ![alt text](./framework.png)
 
 
