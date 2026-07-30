@@ -1,0 +1,10 @@
+langchain-openai>=1.1.7
+langchain-core>=1.2.7
+langgraph>=1.0.5
+pydantic>=2.11.9
+typing-extensions>=4.15.0
+numpy>=1.26.4
+pandas>=1.5.3
+python-dotenv>=1.1.1
+openai>=1.109.1
+pulp>=2.8.0
